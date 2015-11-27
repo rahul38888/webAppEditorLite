@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href='http://fonts.googleapis.com/css?family=Hammersmith+One' rel='stylesheet' type='text/css'>
+  <title>try</title>
+  <link rel="stylesheet" href="style.css">
+  <script type="text/javascript" src="script.js"></script>
+</head>
+
+<body onmouseup ="disableDrag();" id="body">
+  <table>
+
+    <tr>
+      <td>
+        <div id="container">
+          <div id="frame">
+            <h3 id="htmlText" class="title">Html</h3>
+            <div id="htmlGap" class="gap"></div>
+            <textarea id="html" class="code" onfocus="focusHandler('html');"  onblur="blurHandler('html');"></textarea>
+          </div>
+          <div id="resize1" class="dragBar" onmousedown="enableDrag('resize1');"></div>
+
+          <div id="frame">
+            <h3 id="cssText" class="title">Css</h3>
+            <div  id="cssGap" class="gap"></div>
+            <textarea id="css" class="code" onfocus="focusHandler('css');"  onblur="blurHandler('css');"></textarea>
+          </div>
+          <div id="resize2" class="dragBar" onmousedown="enableDrag('resize2');"></div>
+
+          <div id="frame">
+            <h3 id="javaText" class="title">Js</h3>
+            <div id="javaGap" class="gap"></div>
+            <textarea id="java" class="code" onfocus="focusHandler('java');"  onblur="blurHandler('java');"></textarea>
+          </div>
+        </div>
+      </td>
+
+      <td>
+        <input type="button" value="Go" id="submit" onclick="submitHandler();" />
+      </td>
+
+      <td>
+        <div id="toggle"></div>
+        <iframe id="output"></iframe>
+      </td>
+    </tr>
+
+  </table>
+</body>
+</html>
