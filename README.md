@@ -1,4 +1,4 @@
-# webAppEditorLite
+# Web-Dev Editor Lite
 A lite Web App editor
 
 ###To install
